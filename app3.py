@@ -18,20 +18,7 @@ CheckVal = []
 
 
 def read_task():
-    if os.path.exists(data_dir):
-        with open(data_dir +"/"+ fileName, "r") as file:
-            lines = file.readline()
-            while lines:
-                time, title, contents = lines.split(',')
-                record = {
-                    'time'   : time,
-                    'title'  : title,
-                    'contents'   :  contents.strip()
-                }
-                TodoDB[time] = TodoDB.get(time, []) + [record]
-                Todo_Contents.append(contents.strip())
-                lines = file.readline()
-    else:
+    if not os.path.exists(data_dir):
         print("make file")
         os.makedirs(data_dir)
         with open(data_dir +"/"+ fileName, "w") as file:
@@ -40,6 +27,19 @@ def read_task():
             first_content = "make new file for the first time"
             data = ','.join([now.isoformat(),first_title,first_content])
             file.write(data+'\n')
+
+    with open(data_dir +"/"+ fileName, "r") as file:
+        lines = file.readline()
+        while lines:
+            time, title, contents = lines.split(',')
+            record = {
+                'time'   : time,
+                'title'  : title,
+                'contents'   :  contents.strip()
+            }
+            TodoDB[time] = TodoDB.get(time, []) + [record]
+            Todo_Contents.append(contents.strip())
+            lines = file.readline()
 
     Todo_Contents.remove(Todo_Contents[0])
 
