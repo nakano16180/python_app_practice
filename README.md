@@ -1,5 +1,13 @@
 ## Python App Practice
 
+### use virtualenv
+
+```
+$ cd python_app_practice/
+$ virtualenv -p python3.6 .venv
+$ source .venv/bin/activate
+```
+
 ### python_db.py
 
 #### setup
@@ -34,4 +42,11 @@ $ docker start psql
 $ python3 python_db.py
 
 $ docker stop psql
+```
+
+### crud.py
+basic crud app
+
+```
+$ python3 crud.py
 ```
