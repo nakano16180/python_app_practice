@@ -50,3 +50,9 @@ basic crud app
 ```
 $ python3 crud.py
 ```
+### custom_cmd.py
+example for argumentparser
+
+```
+$ python3 custom_cmd.py input.txt output.txt
+```
