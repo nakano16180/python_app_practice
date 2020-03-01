@@ -44,6 +44,8 @@ $ python3 python_db.py
 $ docker stop psql
 ```
 
+### sqlite_practice.py
+
 ### crud.py
 basic crud app
 
