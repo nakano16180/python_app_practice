@@ -46,6 +46,10 @@ $ docker stop psql
 
 ### sqlite_practice.py
 
+```
+$ mkdir database
+$ python3 sqlite_practice.py
+```
 ### crud.py
 basic crud app
 
@@ -57,4 +61,12 @@ example for argumentparser
 
 ```
 $ python3 custom_cmd.py input.txt output.txt
+```
+### doc_manage.py
+
+```
+$ mkdir template/
+$ echo 'This is template' > temp.txt
+
+$ python3 doc_manage.py
 ```
