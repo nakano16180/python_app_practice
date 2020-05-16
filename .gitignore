@@ -2,3 +2,5 @@
 log/
 Todo/
 database/
+.venv/
+data.txt
