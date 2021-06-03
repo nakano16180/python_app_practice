@@ -1,29 +1,33 @@
 ## Python App Practice
 
-### use virtualenv
+### use pipenv
 
 ```
 $ cd python_app_practice/
 $ pipenv install
 ```
+
 ### app3.py
 sample for tkinter
 
 ```
 $ pipenv run python3 app3.py
 ```
+
 ### crud.py
 basic crud app
 
 ```
 $ python3 crud.py
 ```
+
 ### custom_cmd.py
 example for argumentparser
 
 ```
 $ pipenv run python3 custom_cmd.py input.txt output.txt
 ```
+
 ### doc_manage.py
 
 ```
